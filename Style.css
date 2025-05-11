@@ -1,0 +1,256 @@
+.contenant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 0 0 30px;
+    background-color: aquamarine;
+}
+
+.contenant nav ul {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    right: 150px;
+}
+
+.contenant nav ul li {
+    display: inline-block;
+
+
+}
+
+.contenant nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.logo img {
+    width: 95px;
+    border-radius: 50%;
+    padding: 20px;
+    animation: rotate 30s linear infinite
+}
+
+.rotation-logo {
+    height: auto;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*...........header.........*/
+
+.image-avant {
+    background-image: url(./image/geger1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.text {
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.pgCenter {
+    align-items: center;
+    text-align: center;
+}
+
+.back1{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: #87CEEB;
+}
+
+/*........qaurer et cercle .......*/
+
+.totale{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.quarer{
+    width: 470px;
+    height: 600px;
+    background-color: aqua;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    padding-top: 40px;
+    gap: 80px;
+}
+
+.cercle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.cercle img{
+    width: 100%;
+    height: 100%;
+      object-fit: cover;
+      padding-top: -5px;
+      
+}
+
+.text2{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+   
+}
+
+.auter{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: rgb(131, 219, 190);
+    border-radius: 10px;
+
+}
+
+
+
+.ensemble{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.image img{
+    align-items: center;
+    width: 250px;
+    
+    
+}
+
+.image2 img{
+    align-items: center;
+    width: 250px;
+  
+}
+
+.image2 {
+    margin-right: 25px;
+}
+
+.image{
+    
+    animation: vasEtVient 5s ease-in-out infinite alternate;
+}
+/* Animation de va-et-vient */
+@keyframes vasEtVient {
+    10% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(25px); /* Ajustez la distance du déplacement */
+    }
+}
+
+.image2{
+    
+    animation: VientEtVas 5s ease-in-out infinite alternate;
+}
+/* Animation de va-et-vient */
+@keyframes VientEtVas {
+    10% {
+        transform: translateX(25px);
+    }
+    100% {
+        transform: translateX(0); /* Ajustez la distance du déplacement */
+    }
+}
+
+/*............. footer..............*/
+
+.footer{
+    background-image: url(./image/it6.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.map-container {
+    width: 625px;
+  height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style iframe pour bien remplir le conteneur */
+.map-container iframe {
+    width: 625px;
+    height: 100%;
+    
+}
+
+/*............foother..........*/
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;;
+    background-color: rgb(93, 219, 219);
+    gap: 35px;
+}
+
+.imgmail img{
+    width: 40px;
+}
+
+.telephone img{
+    width: 40px;
+}
+
+    
+
+
